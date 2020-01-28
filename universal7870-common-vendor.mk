@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/lpm:$(TARGET_COPY_OUT_VENDOR)/bin/lpm \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/sswap:$(TARGET_COPY_OUT_VENDOR)/bin/sswap \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
-    vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
+    vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.2-service \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.memtrack@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack@1.0-service \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@1.0-service \
@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/camera.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.universal7870.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.exynos5.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos5.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/memtrack.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos5.so \
@@ -98,7 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/hw/camera.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.universal7870.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/hw/gralloc.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos5.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/hw/hwcomposer.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos5.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/hw/memtrack.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos5.so \
