@@ -182,6 +182,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += libGLES_mali
 
 # Common audio
+PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/audio/common/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
     vendor/samsung/universal7870-common/proprietary/audio/common/lib/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioroute.so \
     vendor/samsung/universal7870-common/proprietary/audio/common/lib/libLifevibes_lvverx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLifevibes_lvverx.so \
