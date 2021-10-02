@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter exynos7870, $(TARGET_SOC)),)
+ifneq ($(filter a3y17lte a5y17lte a6lte j6lte j7velte j7xelte j7y17lte on7xelte, $(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libGLES_mali
@@ -42,4 +42,3 @@ ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
 include $(BUILD_PREBUILT)
 
 endif
-
