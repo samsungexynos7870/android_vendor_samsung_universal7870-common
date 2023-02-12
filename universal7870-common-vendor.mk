@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/camera.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.exynos5.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/camera.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.universal7870.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/libgui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui.so \
+    vendor/samsung/universal7870-common/proprietary/vendor/lib64/libgui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/libcamera_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_client.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/libGrallocWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGrallocWrapper.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/libGrallocWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGrallocWrapper.so
