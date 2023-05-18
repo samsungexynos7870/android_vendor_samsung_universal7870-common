@@ -36,8 +36,8 @@ $(SYMLINKS):
 	@echo "Symlink: vulkan.exynos5.so"
 	@mkdir -p $@/lib/hw
 	@mkdir -p $@/lib64/hw
-	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib/hw/vulkan.exynos5.so
-	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib64/hw/vulkan.exynos5.so
+	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib/hw/vulkan.universal7870.so
+	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib64/hw/vulkan.universal7870.so
 	@echo "Symlink: libOpenCL.so"
 	$(hide) ln -sf egl/libGLES_mali.so $@/lib/libOpenCL.so
 	$(hide) ln -sf egl/libGLES_mali.so $@/lib64/libOpenCL.so
