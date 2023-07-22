@@ -120,10 +120,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/libGrallocWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGrallocWrapper.so \
     vendor/samsung/universal7870-common/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
     
-
 # libgui
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib/libgui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui.so
+    vendor/samsung/universal7870-common/proprietary/vendor/lib/libgui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui.so \
+    vendor/samsung/universal7870-common/proprietary/vendor/lib64/libgui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgui.so
     
 # libstainkiller
 PRODUCT_COPY_FILES += \
