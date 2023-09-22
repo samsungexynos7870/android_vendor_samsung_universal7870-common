@@ -99,8 +99,9 @@ PRODUCT_COPY_FILES += \
 # libfloatingfeature
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfloatingfeature.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so
-    
+    vendor/samsung/universal7870-common/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
+    vendor/samsung/universal7870-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml
+
 # mfc Frimware
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin
