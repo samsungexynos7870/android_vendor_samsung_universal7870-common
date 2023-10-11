@@ -33,11 +33,11 @@ LOCAL_CHECK_ELF_FILES := false
 
 SYMLINKS := $(TARGET_OUT_VENDOR)
 $(SYMLINKS):
-	@echo "Symlink: vulkan.exynos5.so"
+	@echo "Symlink: vulkan.$(TARGET_BOARD_PLATFORM).so"
 	@mkdir -p $@/lib/hw
 	@mkdir -p $@/lib64/hw
-	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib/hw/vulkan.universal7870.so
-	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib64/hw/vulkan.universal7870.so
+	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
+	$(hide) ln -sf ../egl/libGLES_mali.so $@/lib64/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
 	@echo "Symlink: libOpenCL.so"
 	$(hide) ln -sf egl/libGLES_mali.so $@/lib/libOpenCL.so
 	$(hide) ln -sf egl/libGLES_mali.so $@/lib64/libOpenCL.so
