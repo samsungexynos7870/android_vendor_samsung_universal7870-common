@@ -113,8 +113,7 @@ PRODUCT_COPY_FILES += \
     
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/camera.vendor.exynos7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.exynos7870.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc
+    vendor/samsung/universal7870-common/proprietary/vendor/lib/hw/camera.vendor.exynos7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.exynos7870.so
     
 # libgui
 PRODUCT_COPY_FILES += \
