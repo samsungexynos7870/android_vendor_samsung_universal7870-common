@@ -133,7 +133,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfloatingfeature.so \
     vendor/samsung/universal7870-common/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/vendor/etc/floating_feature.xml
+    vendor/samsung/universal7870-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml
 
 # Radio
 PRODUCT_COPY_FILES += \
