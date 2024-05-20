@@ -65,7 +65,7 @@ ifeq ($(TARGET_DEVICE_HAS_SEC_GNSS),true)
 endif
 
 # misc
-ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_7870),true)
+ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
 -include vendor/samsung/universal7870-common/samsung_slsi/samsung_slsi-vendor.mk
 endif
 
