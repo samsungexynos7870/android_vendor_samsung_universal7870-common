@@ -80,6 +80,14 @@ PRODUCT_PACKAGES += \
 
 # common audio
 ifeq ($(TARGET_DEVICE_HAS_SEC_AUDIO_HAL),true)
+TARGET_DEVICE_COMMON_SEC_AUDIO_HAL := true
+endif
+
+ifeq ($(TARGET_DEVICE_HAS_TFA_SEC_AUDIO_HAL),true)
+TARGET_DEVICE_COMMON_SEC_AUDIO_HAL := true
+endif
+
+ifeq ($(TARGET_DEVICE_COMMON_SEC_AUDIO_HAL),true)
 PRODUCT_PACKAGES += \
     libaudior7870 \
     libLifevibes_lvverx \
@@ -110,5 +118,9 @@ endif
 ifeq ($(TARGET_DEVICE_HAS_TFA_AMP),true)
 PRODUCT_PACKAGES += \
     libtfa98xx
+    
+PRODUCT_COPY_FILES += \
+    vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt
+
 endif
 
