@@ -67,6 +67,8 @@ endif
 # misc
 ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
 -include vendor/samsung/universal7870-common/samsung_slsi/samsung_slsi-vendor.mk
+-include vendor/samsung/universal7870-common/samsung_slsi_p/samsung_slsi_p-vendor.mk
+-include vendor/samsung/universal7870-common/samsung_slsi_q/samsung_slsi_q-vendor.mk
 endif
 
 # keymaster & keystore
@@ -121,6 +123,5 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt
-
 endif
 
