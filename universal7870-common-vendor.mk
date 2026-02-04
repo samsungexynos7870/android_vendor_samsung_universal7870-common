@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin
 
 PRODUCT_PACKAGES += \
-    camera.vendor.exynos7870 \
     libsensorlistener \
     libstainkiller \
     libuniplugin
