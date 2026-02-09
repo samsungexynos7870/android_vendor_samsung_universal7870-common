@@ -35,15 +35,6 @@ PRODUCT_PACKAGES += \
 # teegris
 -include vendor/samsung/universal7870-common/tee/tee-vendor.mk
 
-# gatekeeper
-ifeq ($(TARGET_DEVICE_HAS_HW_GATEKEEPER_BIOMETRICS),true)
--include vendor/samsung/universal7870-common/gatekeeper-biometrics/gatekeeper-biometrics-vendor.mk
-endif
-
-ifeq ($(TARGET_DEVICE_HAS_HW_GATEKEEPER_COMMON),true)
--include vendor/samsung/universal7870-common/gatekeeper/gatekeeper-vendor.mk
-endif
-
 # radio
 ifeq ($(TARGET_DEVICE_HAS_SEC_RIL),true)
 -include vendor/samsung/universal7870-common/sec_radio/sec_radio-vendor.mk
