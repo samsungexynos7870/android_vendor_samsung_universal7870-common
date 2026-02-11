@@ -33,9 +33,6 @@ PRODUCT_PACKAGES += \
 # secapp
 -include vendor/samsung/universal7870-common/secapp/secapp-vendor.mk
 
-# teegris
--include vendor/samsung/universal7870-common/tee/tee-vendor.mk
-
 # radio
 ifeq ($(TARGET_DEVICE_HAS_SEC_RIL),true)
 -include vendor/samsung/universal7870-common/sec_radio/sec_radio-vendor.mk
