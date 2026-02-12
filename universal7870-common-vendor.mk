@@ -60,10 +60,8 @@ ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
 -include vendor/samsung/universal7870-common/samsung_slsi_oss/samsung_slsi_oss-vendor.mk
 endif
 
-# keymaster & keystore
-ifeq ($(TARGET_DEVICE_HAS_SEC_KEYMASTER),true)
+# keystore
 -include vendor/samsung/universal7870-common/sec_keymaster/sec_keymaster-vendor.mk
-endif
 
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += \
