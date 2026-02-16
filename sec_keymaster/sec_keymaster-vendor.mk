@@ -8,6 +8,5 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     keystore.mdfpp \
-    libkeymaster2_mdfpp \
-    libkeymaster_helper_vendor \
-    libskeymaster3device
+    libkeymaster_mdfpp \
+    libkeymaster_helper
