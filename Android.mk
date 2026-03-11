@@ -294,10 +294,10 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB := 32
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 ifeq ($(TARGET_BOARD_HAS_SEC_AUDIO_HAL),true)
-LOCAL_SHARED_LIBRARIES := libSamsungPostProcessConvertor libaudio-ril libaudior7870 libaudioroute_sec_helper libaudioutils libc++ libc libcutils libdl libfloatingfeature liblog libm libpreprocessing_nxp librecordalive libsamsungDiamondVoice libsecaudioinfo libalsa7870 libtinycompress libutils libvndsecril-client
+LOCAL_SHARED_LIBRARIES := libSamsungPostProcessConvertor libaudio-ril libaudior7870 libaudioutils libc++ libc libcutils libdl libfloatingfeature liblog libm libpreprocessing_nxp librecordalive libsamsungDiamondVoice libsecaudioinfo libalsa7870 libtinycompress libutils libvndsecril-client
 endif
 ifeq ($(TARGET_BOARD_HAS_TFA_SEC_AUDIO_HAL),true)
-LOCAL_SHARED_LIBRARIES := libSamsungPostProcessConvertor libalsa7870 libaudio-ril libaudior7870 libaudioroute_sec_helper libaudioutils libc++ libc libcutils libdl libfloatingfeature liblog libm libpreprocessing_nxp librecordalive libsamsungDiamondVoice libsecaudioinfo libtfa98xx libtinycompress libutils libvndsecril-client
+LOCAL_SHARED_LIBRARIES := libSamsungPostProcessConvertor libalsa7870 libaudio-ril libaudior7870 libaudioutils libc++ libc libcutils libdl libfloatingfeature liblog libm libpreprocessing_nxp librecordalive libsamsungDiamondVoice libsecaudioinfo libtfa98xx libtinycompress libutils libvndsecril-client
 endif
 include $(BUILD_PREBUILT)
 endif
