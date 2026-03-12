@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal7870-common/tfa_sec_audio
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt \
+    vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa$(TFA_MODEL).cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa$(TFA_MODEL).cnt \
     vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/nxp/AzControlParams_SPEAKER.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/AzControlParams_SPEAKER.txt \
     vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/nxp/LVAZFS_Configuration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/LVAZFS_Configuration.txt \
     vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/nxp/speechassist/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/speechassist/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt \

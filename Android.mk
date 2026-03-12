@@ -74,7 +74,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libtfa98xx
 LOCAL_MODULE_OWNER := samsung
 LOCAL_VENDOR_MODULE := true
-LOCAL_SRC_FILES_32 := $(LOCAL_AUDIO_VARIANT_DIR)/proprietary/vendor/lib/libtfa98xx.so
+LOCAL_SRC_FILES_32 := $(LOCAL_AUDIO_VARIANT_DIR)/proprietary/vendor/lib/libtfa98xx_$(TARGET_BOARD_TFA_MODEL).so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MULTILIB := 32

@@ -109,6 +109,6 @@ PRODUCT_PACKAGES += \
     libtfa98xx
     
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt
+    vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt
 endif
 
