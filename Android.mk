@@ -53,34 +53,17 @@ ifeq ($(TARGET_BOARD_HAS_TFA_SEC_AUDIO_HAL),true)
 LOCAL_AUDIO_VARIANT_DIR := tfa_sec_audio
 LOCAL_SAMSUNGREC_VARIANT := 06006
 LOCAL_USE_STARLTE_VNDSECRIL := true
-LOCAL_USE_TFA_AMP := true
 LOCAL_EXYNOS7870_AUDIO_GUARD := true
 endif
 
 # TFA AUDIO shoud be avaiable when needed
 ifeq ($(TARGET_AUDIOHAL_VARIANT),samsung-linaro-exynos7870)
-LOCAL_USE_TFA_AMP := true
 LOCAL_AUDIO_VARIANT_DIR := tfa_sec_audio
 LOCAL_USE_STARLTE_VNDSECRIL := true
 endif
 ifeq ($(TARGET_AUDIOHAL_VARIANT),samsung-exynos7870)
-LOCAL_USE_TFA_AMP := true
 LOCAL_AUDIO_VARIANT_DIR := tfa_sec_audio
 LOCAL_USE_STARLTE_VNDSECRIL := true
-endif
-
-ifeq ($(LOCAL_USE_TFA_AMP),true)
-include $(CLEAR_VARS)
-LOCAL_MODULE := libtfa98xx
-LOCAL_MODULE_OWNER := samsung
-LOCAL_VENDOR_MODULE := true
-LOCAL_SRC_FILES_32 := $(LOCAL_AUDIO_VARIANT_DIR)/proprietary/vendor/lib/libtfa98xx_$(TARGET_BOARD_TFA_MODEL).so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_SHARED_LIBRARIES := libcutils libutils liblog libc++ libc libm libdl
-include $(BUILD_PREBUILT)
 endif
 
 
