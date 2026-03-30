@@ -80,9 +80,7 @@ ifeq ($(TARGET_DEVICE_HAS_SEC_GNSS),true)
 endif
 
 # Keymaster
-ifeq ($(TARGET_DEVICE_HAS_SEC_KEYMASTER),true)
 -include vendor/samsung/universal7870-common/keymaster/keymaster-vendor.mk
-endif
 
 # Secapp
 -include vendor/samsung/universal7870-common/secapp/secapp-vendor.mk

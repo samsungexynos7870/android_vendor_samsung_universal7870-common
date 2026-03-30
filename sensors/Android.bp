@@ -7,7 +7,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
 	name: "libsensorlistener",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},

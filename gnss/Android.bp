@@ -7,7 +7,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
 	name: "android.hardware.gnss@2.0-impl",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -25,7 +25,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.gnss@2.0-impl",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -43,7 +43,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libwrappergps",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},

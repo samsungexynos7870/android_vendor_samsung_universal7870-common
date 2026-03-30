@@ -7,7 +7,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
 	name: "libfloatingfeature",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -27,7 +27,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libril-samsung",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -47,7 +47,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libsec-ril-dsds",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -67,7 +67,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libsec-ril",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -87,7 +87,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libsec_semRil",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -107,7 +107,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libsecnativefeature",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -127,7 +127,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libvkmanager_vendor",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -147,7 +147,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.radio.bridge@2.0",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -167,7 +167,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.radio.channel@2.0",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -187,7 +187,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.radio@2.0",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -207,7 +207,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.radio@2.1",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -227,7 +227,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libaudio-ril",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
@@ -244,7 +244,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libaptX_encoder",
-	owner: "samsung/universal7870-common",
+	owner: "samsung",
 	strip: {
 		none: true,
 	},
