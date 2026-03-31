@@ -10,10 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/radio/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/samsung/universal7870-common/radio/proprietary/vendor/bin/secril_config_svc:$(TARGET_COPY_OUT_VENDOR)/bin/secril_config_svc \
     vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
-    vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
-    vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
-    vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
-    vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
     vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/universal7870-common/radio/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
 
@@ -22,12 +18,10 @@ PRODUCT_PACKAGES += \
     libril-samsung \
     libsec-ril-dsds \
     libsec-ril \
-    libsec_semRil \
     libsecnativefeature \
-    libvkmanager_vendor \
     vendor.samsung.hardware.radio.bridge@2.0 \
-    vendor.samsung.hardware.radio.channel@2.0 \
-    vendor.samsung.hardware.radio@2.0 \
-    vendor.samsung.hardware.radio@2.1 \
+    vendor.samsung.hardware.radio.bridge@2.0_vendor \
+    vendor.samsung.hardware.radio.channel@2.0_vendor \
+    vendor.samsung.hardware.radio@2.0_vendor \
     libaudio-ril \
     libaptX_encoder

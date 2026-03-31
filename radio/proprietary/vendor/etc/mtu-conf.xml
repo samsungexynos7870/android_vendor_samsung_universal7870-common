@@ -75,12 +75,11 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="20610" mtu="1340" rat="4"/>
 
 <!-- Orange VoWIFI -->
-    <mtuTableEntry numeric="20801" mtu="1300" rat="4"/>
-    <mtuTableEntry numeric="22610" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="20801" mtu="1340" rat="4"/>
+    <mtuTableEntry numeric="22610" mtu="1340" rat="4"/>
     <mtuTableEntry numeric="26003" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="26003" mtu="1300" rat="4"/>
-    <mtuTableEntry numeric="21403" mtu="1300" rat="4"/>
-    <mtuTableEntry numeric="64700" mtu="1300" rat="4"/>
+    <mtuTableEntry numeric="21403" mtu="1280" rat="4"/>
 
 <!-- Telenet Luxembourg(LUX) VoLTE VoWifi -->
     <mtuTableEntry numeric="20605" mtu="1300" profile="2"/>
@@ -127,10 +126,6 @@ mtuTableEntry attributes:
 <!-- Salt -->
     <mtuTableEntry numeric="22803" mtu="1280" profile="2"/>
     <mtuTableEntry numeric="22803" mtu="1280" rat="4"/>
-
-<!-- T-Mobile A -->
-    <mtuTableEntry numeric="23203" mtu="1280" rat="4"/>
-    <mtuTableEntry numeric="23207" mtu="1280" rat="4"/>
 
 <!-- Hutchison -->
     <mtuTableEntry numeric="23205" mtu="1280" rat="4"/>
@@ -227,19 +222,9 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="26209" mtu="1280" profile="2"/>
     <mtuTableEntry numeric="26209" mtu="1280" rat="4"/>    
 
-<!-- Portugal-NOS -->
-    <mtuTableEntry numeric="26803" mtu="1380" profile="2"/>
-
-<!-- Portugal-NOS Trial -->
-    <mtuTableEntry numeric="26899" mtu="1300" profile="2"/>
-
 <!-- Vodafone VDI VoLTE VoWifi -->
     <mtuTableEntry numeric="27201" mtu="1330" profile="2"/>
     <mtuTableEntry numeric="27201" mtu="1330" rat="4"/>
-
-<!-- A1 Bulgaria -->
-    <mtuTableEntry numeric="28401" mtu="1330" profile="2"/>
-    <mtuTableEntry numeric="28401" mtu="1330" rat="4"/>
 
 <!-- TURKCELL -->
     <mtuTableEntry numeric="28601" mtu="1300" profile="2"/>    
@@ -247,9 +232,6 @@ mtuTableEntry attributes:
 <!-- AVEA -->
     <mtuTableEntry numeric="28603" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="28603" mtu="1300" rat="4"/>
-
-<!-- Telemach (Slovenia) -->
-    <mtuTableEntry numeric="29370" mtu="1300" profile="2"/>
 
 <!-- Telus -->
     <mtuTableEntry numeric="302220" mtu="1440" profile="2"/>
@@ -534,8 +516,6 @@ mtuTableEntry attributes:
 <!-- Claro Chile -->
     <mtuTableEntry numeric="73003" mtu="1300" proto="1"/>
     <mtuTableEntry numeric="73003" mtu="1280" proto="2"/>
-    <mtuTableEntry numeric="73023" mtu="1300" proto="1"/>
-    <mtuTableEntry numeric="73023" mtu="1280" proto="2"/>
 
 <!-- ATT Mexico -->
     <mtuTableEntry numeric="33405" mtu="1390" profile="2"/>

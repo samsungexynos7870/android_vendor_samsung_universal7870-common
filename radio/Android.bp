@@ -86,26 +86,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsec_semRil",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsec_semRil.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsec_semRil.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsecnativefeature",
 	owner: "samsung",
 	strip: {
@@ -117,26 +97,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsecnativefeature.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvkmanager_vendor",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvkmanager_vendor.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvkmanager_vendor.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -166,17 +126,17 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio.channel@2.0",
+	name: "vendor.samsung.hardware.radio.bridge@2.0_vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so"],
+			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0_vendor.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0_vendor.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -186,17 +146,17 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio@2.0",
+	name: "vendor.samsung.hardware.radio.channel@2.0_vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0.so"],
+			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@2.0_vendor.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0_vendor.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -206,17 +166,17 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio@2.1",
+	name: "vendor.samsung.hardware.radio@2.0_vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.radio@2.1.so"],
+			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.1.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0_vendor.so"],
 		},
 	},
 	compile_multilib: "both",
