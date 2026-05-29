@@ -48,41 +48,41 @@ include $(BUILD_PREBUILT)
 ifeq ($(TARGET_BOARD_HAS_SEC_AUDIO_HAL),true)
 LOCAL_AUDIO_VARIANT_DIR := sec_audio
 LOCAL_SAMSUNGREC_VARIANT := 06004
-LOCAL_USE_STARLTE_VNDSECRIL := true
+LOCAL_USE_J7DUOLTE_VNDSECRIL := true
 LOCAL_EXYNOS7870_AUDIO_GUARD := true
 endif
 
 ifeq ($(TARGET_BOARD_HAS_TFA_SEC_AUDIO_HAL),true)
 LOCAL_AUDIO_VARIANT_DIR := tfa_sec_audio
 LOCAL_SAMSUNGREC_VARIANT := 06006
-LOCAL_USE_STARLTE_VNDSECRIL := true
+LOCAL_USE_J7DUOLTE_VNDSECRIL := true
 LOCAL_EXYNOS7870_AUDIO_GUARD := true
 endif
 
 # TFA AUDIO shoud be avaiable when needed
 ifeq ($(TARGET_AUDIOHAL_VARIANT),samsung-linaro-exynos7870)
 LOCAL_AUDIO_VARIANT_DIR := tfa_sec_audio
-LOCAL_USE_STARLTE_VNDSECRIL := true
+LOCAL_USE_J7DUOLTE_VNDSECRIL := true
 endif
 ifeq ($(TARGET_AUDIOHAL_VARIANT),samsung-exynos7870)
 LOCAL_AUDIO_VARIANT_DIR := tfa_sec_audio
-LOCAL_USE_STARLTE_VNDSECRIL := true
+LOCAL_USE_J7DUOLTE_VNDSECRIL := true
 endif
 
 
-ifeq ($(LOCAL_USE_STARLTE_VNDSECRIL),true)
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := libvndsecril-client
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_VENDOR_MODULE := true
-#LOCAL_SRC_FILES_64 := sec_radio/proprietary/vendor/lib64/libvndsecril-client.so
-#LOCAL_SRC_FILES_32 := sec_radio/proprietary/vendor/lib/libvndsecril-client.so
-#LOCAL_MULTILIB := both
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_SUFFIX := .so
-#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware_legacy libfloatingfeature libc++ libc libm libdl
-#include $(BUILD_PREBUILT)
+ifeq ($(LOCAL_USE_J7DUOLTE_VNDSECRIL),true)
+include $(CLEAR_VARS)
+LOCAL_MODULE := libvndsecril-client
+LOCAL_MODULE_OWNER := samsung
+LOCAL_VENDOR_MODULE := true
+LOCAL_SRC_FILES_64 := radio/proprietary/vendor/lib64/libvndsecril-client.so
+LOCAL_SRC_FILES_32 := radio/proprietary/vendor/lib/libvndsecril-client.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware_legacy libfloatingfeature libc++ libc libm libdl
+include $(BUILD_PREBUILT)
 endif
 
 ifeq ($(LOCAL_EXYNOS7870_AUDIO_GUARD),true)
