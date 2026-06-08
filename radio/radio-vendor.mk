@@ -21,5 +21,4 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.bridge@2.0_vendor \
     vendor.samsung.hardware.radio.channel@2.0_vendor \
     vendor.samsung.hardware.radio@2.0_vendor \
-    libaudio-ril \
     libaptX_encoder
