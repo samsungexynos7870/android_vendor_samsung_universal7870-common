@@ -54,10 +54,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/audio/sec_tfa/proprietary/vendor/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt
 endif
-
 # Camera O Version
 ifeq ($(TARGET_DEVICE_CAMERA_VER),O)
 -include vendor/samsung/universal7870-common/camera/O/O-vendor.mk
+endif
+
+# Camera P Version
+ifeq ($(TARGET_DEVICE_CAMERA_VER),P)
+-include vendor/samsung/universal7870-common/camera/P/P-vendor.mk
 endif
 
 # Camera Q Version
@@ -103,10 +107,5 @@ endif
 # Samsung SLSI
 ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
 -include vendor/samsung/universal7870-common/samsung-slsi/samsung-slsi-vendor.mk
-endif
-
-# Camera P Version
-ifeq ($(TARGET_DEVICE_CAMERA_VER),P)
--include vendor/samsung/universal7870-common/camera/P/P-vendor.mk
 endif
 
