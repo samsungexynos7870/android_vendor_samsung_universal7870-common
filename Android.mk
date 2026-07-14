@@ -96,18 +96,6 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware_legacy libfloatingfeature
 include $(BUILD_PREBUILT)
 
 ifeq ($(LOCAL_EXYNOS7870_AUDIO_GUARD),true)
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudior7870
-LOCAL_MODULE_OWNER := samsung
-LOCAL_VENDOR_MODULE := true
-LOCAL_SRC_FILES_32 := audio/$(LOCAL_AUDIO_VARIANT_DIR)/proprietary/vendor/lib/libaudior7870.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_SHARED_LIBRARIES := liblog libcutils libutils libexpat libalsa7870 libc++ libc libm libdl
-include $(BUILD_PREBUILT)
-
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libLifevibes_lvverx
@@ -276,19 +264,6 @@ LOCAL_MULTILIB := 32
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_SHARED_LIBRARIES := libcutils libutils liblog libc++ libc libm libdl
 include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libalsa7870
-LOCAL_MODULE_OWNER := samsung
-LOCAL_VENDOR_MODULE := true
-LOCAL_SRC_FILES_32 := audio/$(LOCAL_AUDIO_VARIANT_DIR)/proprietary/vendor/lib/libalsa7870.so
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_SHARED_LIBRARIES := libc++ libc libm libdl
-include $(BUILD_PREBUILT)
-
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := audio.primary.exynos7870
