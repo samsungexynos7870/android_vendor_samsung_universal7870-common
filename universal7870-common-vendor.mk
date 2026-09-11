@@ -6,64 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal7870-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml
-
-PRODUCT_PACKAGES += \
-    libfloatingfeature \
-    libaptX_encoder
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/universal7870-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so
-
-PRODUCT_PACKAGES += \
-    libdrmclearkeyplugin
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin
-
-PRODUCT_PACKAGES += \
-    camera.vendor.exynos7870 \
-    libsensorlistener \
-    libstainkiller \
-    libuniplugin
-
-# secapp
--include vendor/samsung/universal7870-common/secapp/secapp-vendor.mk
-
-# radio
-ifeq ($(TARGET_DEVICE_HAS_SEC_RIL),true)
--include vendor/samsung/universal7870-common/sec_radio/sec_radio-vendor.mk
-endif
-
-# audio
-ifeq ($(TARGET_DEVICE_HAS_SEC_AUDIO),true)
--include vendor/samsung/universal7870-common/sec_audio/sec_audio-vendor.mk
-endif
-
-ifeq ($(TARGET_DEVICE_HAS_TFA_SEC_AUDIO),true)
--include vendor/samsung/universal7870-common/tfa_sec_audio/tfa_sec_audio-vendor.mk
-endif
-
-# gnss
-ifeq ($(TARGET_DEVICE_HAS_SEC_GNSS),true)
--include vendor/samsung/universal7870-common/sec_gnss/sec_gnss-vendor.mk
-endif
-
-# misc
-ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
--include vendor/samsung/universal7870-common/samsung_slsi/samsung_slsi-vendor.mk
--include vendor/samsung/universal7870-common/samsung_slsi_omx/samsung_slsi_omx-vendor.mk
--include vendor/samsung/universal7870-common/samsung_slsi_p/samsung_slsi_p-vendor.mk
--include vendor/samsung/universal7870-common/samsung_slsi_q/samsung_slsi_q-vendor.mk
--include vendor/samsung/universal7870-common/samsung_slsi_oss/samsung_slsi_oss-vendor.mk
-endif
-
-# keystore
-# -include vendor/samsung/universal7870-common/sec_keymaster/sec_keymaster-vendor.mk
-
 # Create Mali links for Vulkan and OpenCL
 PRODUCT_PACKAGES += \
     libGLES_mali
@@ -105,11 +47,47 @@ PRODUCT_PACKAGES += \
     lib_SamsungRec_06006
 endif
 
-ifeq ($(TARGET_DEVICE_HAS_TFA_AMP),true)
-PRODUCT_PACKAGES += \
-    libtfa98xx
-    
+ifeq ($(TARGET_DEVICE_HAS_TFA_AMP),true)  
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/tfa_sec_audio/proprietary/vendor/etc/Tfa$(TFA_MODEL).cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa$(TFA_MODEL).cnt
+    vendor/samsung/universal7870-common/audio/sec_tfa/proprietary/vendor/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt
 endif
+# Audio - SEC
+ifeq ($(TARGET_DEVICE_HAS_SEC_AUDIO),true)
+-include vendor/samsung/universal7870-common/audio/sec/sec-vendor.mk
+endif
+
+# Audio - TFA SEC
+ifeq ($(TARGET_DEVICE_HAS_TFA_SEC_AUDIO),true)
+-include vendor/samsung/universal7870-common/audio/sec_tfa/sec_tfa-vendor.mk
+endif
+
+# GNSS
+ifeq ($(TARGET_DEVICE_HAS_SEC_GNSS),true)
+-include vendor/samsung/universal7870-common/gnss/gnss-vendor.mk
+endif
+
+# Secapp
+-include vendor/samsung/universal7870-common/secapp/secapp-vendor.mk
+
+# Radio
+ifeq ($(TARGET_DEVICE_HAS_SEC_RIL),true)
+-include vendor/samsung/universal7870-common/radio/radio-vendor.mk
+endif
+
+# Sensors
+-include vendor/samsung/universal7870-common/sensors/sensors-vendor.mk
+
+# Media
+-include vendor/samsung/universal7870-common/media/media-vendor.mk
+
+# DRM
+-include vendor/samsung/universal7870-common/drm/drm-vendor.mk
+
+# Samsung SLSI
+ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
+-include vendor/samsung/universal7870-common/samsung-slsi/samsung-slsi-vendor.mk
+endif
+
+# Teegris
+-include vendor/samsung/universal7870-common/tee/tee-vendor.mk
 
