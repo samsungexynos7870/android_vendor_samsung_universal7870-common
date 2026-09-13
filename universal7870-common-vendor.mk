@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     lib_SamsungRec_06006
 endif
 
-ifeq ($(TARGET_DEVICE_HAS_TFA_AMP),true)  
+ifeq ($(TARGET_DEVICE_HAS_TFA_AMP),true)
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/audio/sec_tfa/proprietary/vendor/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa$(TARGET_DEVICE_TFA_MODEL).cnt
 endif
@@ -87,7 +87,4 @@ endif
 ifeq ($(TARGET_DEVICE_HAS_SAMSUNG_SLSI_EXYNOS7870),true)
 -include vendor/samsung/universal7870-common/samsung-slsi/samsung-slsi-vendor.mk
 endif
-
-# Teegris
--include vendor/samsung/universal7870-common/tee/tee-vendor.mk
 
