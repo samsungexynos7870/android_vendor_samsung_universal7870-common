@@ -4,12 +4,9 @@
 
 soong_namespace {
     imports: [
-        "device/samsung/universal7870-common",
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/samsung",
-        "hardware/ril",
-        "hardware/lineage/compat",
         "vendor/samsung/universal7870-common",
     ],
 }
