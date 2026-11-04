@@ -217,3 +217,921 @@ cc_prebuilt_binary {
     relative_install_path: "hw",
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libfloatingfeature",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libfloatingfeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfloatingfeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libril-samsung",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libril-samsung.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware_legacy",
+                "librilutils",
+                "android.hardware.radio@1.0",
+                "android.hardware.radio@1.1",
+                "android.hardware.radio@1.2",
+                "android.hardware.radio@1.3",
+                "android.hardware.radio@1.4",
+                "android.hardware.radio.deprecated@1.0",
+                "android.hardware.radio.config@1.0",
+                "android.hardware.radio.config@1.1",
+                "android.hardware.radio.config@1.2",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.samsung.hardware.radio@2.0_vendor",
+                "vendor.samsung.hardware.radio.bridge@2.0_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libril-samsung.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware_legacy",
+                "librilutils",
+                "android.hardware.radio@1.0",
+                "android.hardware.radio@1.1",
+                "android.hardware.radio@1.2",
+                "android.hardware.radio@1.3",
+                "android.hardware.radio@1.4",
+                "android.hardware.radio.deprecated@1.0",
+                "android.hardware.radio.config@1.0",
+                "android.hardware.radio.config@1.1",
+                "android.hardware.radio.config@1.2",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.samsung.hardware.radio@2.0_vendor",
+                "vendor.samsung.hardware.radio.bridge@2.0_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsec-ril-dsds",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsec-ril-dsds.so",
+            ],
+            shared_libs: [
+                "libcutils_shim_vendor",
+                "liblog",
+                "libcutils",
+                "libril-samsung",
+                "libsqlite",
+                "libhardware_legacy",
+                "libcrypto",
+                "librilutils",
+                "libxml2",
+                "libz",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.samsung.hardware.radio.channel@2.0_vendor",
+                "libsecnativefeature",
+                "libfloatingfeature",
+                "libc++",
+                "libprotobuf-cpp-full-vendorcompat",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsec-ril-dsds.so",
+            ],
+            shared_libs: [
+                "libcutils_shim_vendor",
+                "liblog",
+                "libcutils",
+                "libril-samsung",
+                "libsqlite",
+                "libhardware_legacy",
+                "libcrypto",
+                "librilutils",
+                "libxml2",
+                "libz",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.samsung.hardware.radio.channel@2.0_vendor",
+                "libsecnativefeature",
+                "libfloatingfeature",
+                "libc++",
+                "libprotobuf-cpp-full-vendorcompat",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsec-ril",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsec-ril.so",
+            ],
+            shared_libs: [
+                "libcutils_shim_vendor",
+                "liblog",
+                "libcutils",
+                "libril-samsung",
+                "libsqlite",
+                "libhardware_legacy",
+                "libcrypto",
+                "librilutils",
+                "libxml2",
+                "libz",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.samsung.hardware.radio.channel@2.0_vendor",
+                "libsecnativefeature",
+                "libfloatingfeature",
+                "libc++",
+                "libprotobuf-cpp-full-vendorcompat",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsec-ril.so",
+            ],
+            shared_libs: [
+                "libcutils_shim_vendor",
+                "liblog",
+                "libcutils",
+                "libril-samsung",
+                "libsqlite",
+                "libhardware_legacy",
+                "libcrypto",
+                "librilutils",
+                "libxml2",
+                "libz",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "vendor.samsung.hardware.radio.channel@2.0_vendor",
+                "libsecnativefeature",
+                "libfloatingfeature",
+                "libc++",
+                "libprotobuf-cpp-full-vendorcompat",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsecnativefeature",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsecnativefeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libcutils",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsecnativefeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libcutils",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvndsecril-client",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libvndsecril-client.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvndsecril-client.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.radio.bridge@2.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.radio@1.0",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.radio@1.0",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.radio.bridge@2.0_vendor",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "android.hardware.radio@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "android.hardware.radio@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.radio.channel@2.0_vendor",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@2.0_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.radio@2.0_vendor",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "android.hardware.radio@1.0",
+                "android.hardware.radio@1.1",
+                "android.hardware.radio@1.2",
+                "android.hardware.radio@1.3",
+                "android.hardware.radio@1.4",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "android.hardware.radio@1.0",
+                "android.hardware.radio@1.1",
+                "android.hardware.radio@1.2",
+                "android.hardware.radio@1.3",
+                "android.hardware.radio@1.4",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudio-ril",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudio-ril.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libvndsecril-client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaptX_encoder",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libaptX_encoder.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "rild",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/rild",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libril-samsung",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "secril_config_svc",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/secril_config_svc",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libsecnativefeature",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsensorlistener",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsensorlistener.so",
+            ],
+            shared_libs: [
+                "libshim_sensorndkbridge",
+                "libcutils",
+                "libutils",
+                "libsensorndkbridge",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libMcClient",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwvhidl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwvhidl.so",
+            ],
+            shared_libs: [
+                "android.hardware.drm@1.0",
+                "android.hardware.drm@1.1",
+                "android.hardware.drm@1.2",
+                "android.hidl.memory@1.0",
+                "libbase",
+                "libhidlbase",
+                "libhidlmemory",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libprotobuf-cpp-lite-v29",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdrmclearkeyplugin",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "liblog",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "mediadrm",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwvdrmengine",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mediadrm/libwvdrmengine.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libprotobuf-cpp-lite-v29",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "mediadrm",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.security.widevine.keyprovisioning@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.drm@1.2-service.widevine",
+    owner: "samsung",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine",
+            ],
+            shared_libs: [
+                "android.hardware.drm@1.0",
+                "android.hardware.drm@1.1",
+                "android.hardware.drm@1.2",
+                "libbase",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libwvhidl",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service",
+    owner: "samsung",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.samsung.hardware.security.widevine.keyprovisioning@1.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.samsung.hardware.security.widevine.keyprovisioning@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wvkprov",
+    owner: "samsung",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/wvkprov",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "libcutils",
+                "libMcClient",
+                "liboemcrypto",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
