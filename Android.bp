@@ -13,6 +13,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.gnss@2.0-impl",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -52,6 +53,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.gnss@2.0-impl",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -254,6 +256,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libril-samsung",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -327,6 +330,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsec-ril-dsds",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -398,6 +402,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsec-ril",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -805,6 +810,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "rild",
+    check_elf_files: false,
     owner: "samsung",
     target: {
         android_arm64: {
