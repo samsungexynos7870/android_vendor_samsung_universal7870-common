@@ -151,6 +151,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "gpsd",
+    allow_undefined_symbols: true,
     owner: "samsung",
     target: {
         android_arm: {
@@ -896,6 +897,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "liboemcrypto",
+    allow_undefined_symbols: true,
     owner: "samsung",
     strip: {
         none: true,
@@ -1114,6 +1116,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "wvkprov",
+    allow_undefined_symbols: true,
     owner: "samsung",
     target: {
         android_arm: {
