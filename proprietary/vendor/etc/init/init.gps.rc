@@ -21,3 +21,10 @@ service gpsd /vendor/bin/hw/gpsd -c /vendor/etc/gnss/gps.cfg
     group system inet net_raw wakelock
     capabilities BLOCK_SUSPEND
     ioprio be 0
+    # gpsd is an Android 10 era blob that crashes in its BoringSSL verify
+    # callback when run against the current platform libssl/libcrypto
+    # (SIGSEGV in X509_verify_cert -> gpsd). Prefer the matching Samsung
+    # pair from the stock vendor tree, kept in a private directory so
+    # wpa_supplicant, hostapd, keymaster and DRM keep using the platform
+    # BoringSSL. LD_LIBRARY_PATH has priority over the namespace search.
+    setenv LD_LIBRARY_PATH /vendor/lib/gpsd
